@@ -1,12 +1,9 @@
 import { sceneCoordsToViewportCoords } from "@excalidraw/common";
 import { getElementAbsoluteCoords } from "@excalidraw/element";
 
-import type {
-  ElementsMap,
-  NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+import type { ElementsMap, NonDeletedExcalidrawElement } from "@excalidraw/element/types";
 
-import { useExcalidrawAppState } from "../components/App";
+import { useExcalidrawAppState } from "./App";
 
 import "./ElementCanvasButtons.scss";
 
@@ -17,12 +14,12 @@ const CONTAINER_PADDING = 5;
 const getContainerCoords = (
   element: NonDeletedExcalidrawElement,
   appState: AppState,
-  elementsMap: ElementsMap,
+  elementsMap: ElementsMap
 ) => {
   const [x1, y1] = getElementAbsoluteCoords(element, elementsMap);
   const { x: viewportX, y: viewportY } = sceneCoordsToViewportCoords(
     { sceneX: x1 + element.width, sceneY: y1 },
-    appState,
+    appState
   );
   const x = viewportX - appState.offsetLeft + 10;
   const y = viewportY - appState.offsetTop;
