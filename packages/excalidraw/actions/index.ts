@@ -92,3 +92,9 @@ export { actionToggleLinearEditor } from "./actionLinearEditor";
 export { actionToggleSearchMenu } from "./actionToggleSearchMenu";
 
 export { actionToggleCropEditor } from "./actionCropEditor";
+
+export {
+  actionCustomHighlight,
+  actionClearHighlight,
+  actionDuplicateAndHighlight,
+} from "./actionCustomHighlight";

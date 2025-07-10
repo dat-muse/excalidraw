@@ -405,6 +405,7 @@ import { activeEyeDropperAtom } from "./EyeDropper";
 import FollowMode from "./FollowMode/FollowMode";
 import LayerUI from "./LayerUI";
 import { ElementCanvasButton } from "./MagicButton";
+import { CustomHighlightCanvasButtons } from "./CustomHighlightCanvasButtons";
 import { SVGLayer } from "./SVGLayer";
 import { searchItemInFocusAtom } from "./SearchMenu";
 import { isSidebarDockedAtom } from "./Sidebar/Sidebar";
@@ -1711,6 +1712,13 @@ class App extends React.Component<AppProps, AppState> {
                               />
                             </ElementCanvasButtons>
                           )}
+
+                        {/* Custom Highlight Canvas Buttons */}
+                        <CustomHighlightCanvasButtons
+                          elements={this.scene.getNonDeletedElements()}
+                          elementsMap={elementsMap}
+                          app={this}
+                        />
 
                         {this.state.toast !== null && (
                           <Toast
