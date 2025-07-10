@@ -12,8 +12,8 @@
 .yarn
 *.log
 *.tgz
-build
-dist
+# build
+# dist
 firebase
 logs
 node_modules
@@ -21,9 +21,9 @@ npm-debug.log*
 package-lock.json
 yarn-debug.log*
 yarn-error.log*
-packages/excalidraw/types
+# packages/excalidraw/types
 coverage
-dev-dist
+# dev-dist
 html
 meta*.json
 .claude
