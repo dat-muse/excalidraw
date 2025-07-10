@@ -1,5 +1,5 @@
 import type { ExcalidrawElement, FontFamilyValues } from "@excalidraw/element/types";
-import type { AppProps, AppState } from "@excalidraw/excalidraw/types";
+import type { AppProps, AppState } from "excalidraw-custom/types";
 export declare const isDarwin: boolean;
 export declare const isWindows: boolean;
 export declare const isAndroid: boolean;
@@ -19,76 +19,76 @@ export declare const TEXT_TO_CENTER_SNAP_THRESHOLD = 30;
 export declare const SHIFT_LOCKING_ANGLE: number;
 export declare const DEFAULT_LASER_COLOR = "red";
 export declare const CURSOR_TYPE: {
-    TEXT: string;
-    CROSSHAIR: string;
-    GRABBING: string;
-    GRAB: string;
-    POINTER: string;
-    MOVE: string;
-    AUTO: string;
+  TEXT: string;
+  CROSSHAIR: string;
+  GRABBING: string;
+  GRAB: string;
+  POINTER: string;
+  MOVE: string;
+  AUTO: string;
 };
 export declare const POINTER_BUTTON: {
-    readonly MAIN: 0;
-    readonly WHEEL: 1;
-    readonly SECONDARY: 2;
-    readonly TOUCH: -1;
-    readonly ERASER: 5;
+  readonly MAIN: 0;
+  readonly WHEEL: 1;
+  readonly SECONDARY: 2;
+  readonly TOUCH: -1;
+  readonly ERASER: 5;
 };
 export declare const POINTER_EVENTS: {
-    readonly enabled: "all";
-    readonly disabled: "none";
-    readonly inheritFromUI: any;
+  readonly enabled: "all";
+  readonly disabled: "none";
+  readonly inheritFromUI: any;
 };
 export declare enum EVENT {
-    COPY = "copy",
-    PASTE = "paste",
-    CUT = "cut",
-    KEYDOWN = "keydown",
-    KEYUP = "keyup",
-    MOUSE_MOVE = "mousemove",
-    RESIZE = "resize",
-    UNLOAD = "unload",
-    FOCUS = "focus",
-    BLUR = "blur",
-    DRAG_OVER = "dragover",
-    DROP = "drop",
-    GESTURE_END = "gestureend",
-    BEFORE_UNLOAD = "beforeunload",
-    GESTURE_START = "gesturestart",
-    GESTURE_CHANGE = "gesturechange",
-    POINTER_MOVE = "pointermove",
-    POINTER_DOWN = "pointerdown",
-    POINTER_UP = "pointerup",
-    STATE_CHANGE = "statechange",
-    WHEEL = "wheel",
-    TOUCH_START = "touchstart",
-    TOUCH_END = "touchend",
-    HASHCHANGE = "hashchange",
-    VISIBILITY_CHANGE = "visibilitychange",
-    SCROLL = "scroll",
-    EXCALIDRAW_LINK = "excalidraw-link",
-    MENU_ITEM_SELECT = "menu.itemSelect",
-    MESSAGE = "message",
-    FULLSCREENCHANGE = "fullscreenchange"
+  COPY = "copy",
+  PASTE = "paste",
+  CUT = "cut",
+  KEYDOWN = "keydown",
+  KEYUP = "keyup",
+  MOUSE_MOVE = "mousemove",
+  RESIZE = "resize",
+  UNLOAD = "unload",
+  FOCUS = "focus",
+  BLUR = "blur",
+  DRAG_OVER = "dragover",
+  DROP = "drop",
+  GESTURE_END = "gestureend",
+  BEFORE_UNLOAD = "beforeunload",
+  GESTURE_START = "gesturestart",
+  GESTURE_CHANGE = "gesturechange",
+  POINTER_MOVE = "pointermove",
+  POINTER_DOWN = "pointerdown",
+  POINTER_UP = "pointerup",
+  STATE_CHANGE = "statechange",
+  WHEEL = "wheel",
+  TOUCH_START = "touchstart",
+  TOUCH_END = "touchend",
+  HASHCHANGE = "hashchange",
+  VISIBILITY_CHANGE = "visibilitychange",
+  SCROLL = "scroll",
+  EXCALIDRAW_LINK = "excalidraw-link",
+  MENU_ITEM_SELECT = "menu.itemSelect",
+  MESSAGE = "message",
+  FULLSCREENCHANGE = "fullscreenchange",
 }
 export declare const YOUTUBE_STATES: {
-    readonly UNSTARTED: -1;
-    readonly ENDED: 0;
-    readonly PLAYING: 1;
-    readonly PAUSED: 2;
-    readonly BUFFERING: 3;
-    readonly CUED: 5;
+  readonly UNSTARTED: -1;
+  readonly ENDED: 0;
+  readonly PLAYING: 1;
+  readonly PAUSED: 2;
+  readonly BUFFERING: 3;
+  readonly CUED: 5;
 };
 export declare const ENV: {
-    TEST: string;
-    DEVELOPMENT: string;
-    PRODUCTION: string;
+  TEST: string;
+  DEVELOPMENT: string;
+  PRODUCTION: string;
 };
 export declare const CLASSES: {
-    SHAPE_ACTIONS_MENU: string;
-    ZOOM_ACTIONS: string;
-    SEARCH_MENU_INPUT_WRAPPER: string;
-    CONVERT_ELEMENT_TYPE_POPUP: string;
+  SHAPE_ACTIONS_MENU: string;
+  ZOOM_ACTIONS: string;
+  SEARCH_MENU_INPUT_WRAPPER: string;
+  CONVERT_ELEMENT_TYPE_POPUP: string;
 };
 export declare const CJK_HAND_DRAWN_FALLBACK_FONT = "Xiaolai";
 export declare const WINDOWS_EMOJI_FALLBACK_FONT = "Segoe UI Emoji";
@@ -101,51 +101,55 @@ export declare const WINDOWS_EMOJI_FALLBACK_FONT = "Segoe UI Emoji";
  * - https://learn.microsoft.com/en-us/typography/opentype/spec/ibmfc
  */
 export declare const FONT_FAMILY: {
-    Virgil: number;
-    Helvetica: number;
-    Cascadia: number;
-    Excalifont: number;
-    Nunito: number;
-    "Lilita One": number;
-    "Comic Shanns": number;
-    "Liberation Sans": number;
-    Assistant: number;
+  Virgil: number;
+  Helvetica: number;
+  Cascadia: number;
+  Excalifont: number;
+  Nunito: number;
+  "Lilita One": number;
+  "Comic Shanns": number;
+  "Liberation Sans": number;
+  Assistant: number;
 };
 export declare const SANS_SERIF_GENERIC_FONT = "sans-serif";
 export declare const MONOSPACE_GENERIC_FONT = "monospace";
 export declare const FONT_FAMILY_GENERIC_FALLBACKS: {
-    "sans-serif": number;
-    monospace: number;
+  "sans-serif": number;
+  monospace: number;
 };
 export declare const FONT_FAMILY_FALLBACKS: {
-    "Segoe UI Emoji": number;
-    "sans-serif": number;
-    monospace: number;
-    Xiaolai: number;
+  "Segoe UI Emoji": number;
+  "sans-serif": number;
+  monospace: number;
+  Xiaolai: number;
 };
-export declare function getGenericFontFamilyFallback(fontFamily: number): keyof typeof FONT_FAMILY_GENERIC_FALLBACKS;
-export declare const getFontFamilyFallbacks: (fontFamily: number) => Array<keyof typeof FONT_FAMILY_FALLBACKS>;
+export declare function getGenericFontFamilyFallback(
+  fontFamily: number
+): keyof typeof FONT_FAMILY_GENERIC_FALLBACKS;
+export declare const getFontFamilyFallbacks: (
+  fontFamily: number
+) => Array<keyof typeof FONT_FAMILY_FALLBACKS>;
 export declare const THEME: {
-    readonly LIGHT: "light";
-    readonly DARK: "dark";
+  readonly LIGHT: "light";
+  readonly DARK: "dark";
 };
 export declare const FRAME_STYLE: {
-    strokeColor: string;
-    strokeWidth: number;
-    strokeStyle: import("@excalidraw/element/types").StrokeStyle;
-    fillStyle: import("@excalidraw/element/types").FillStyle;
-    roughness: number;
-    roundness: {
-        type: import("@excalidraw/element/types").RoundnessType;
-        value?: number | undefined;
-    } | null;
-    backgroundColor: string;
-    radius: number;
-    nameOffsetY: number;
-    nameColorLightTheme: string;
-    nameColorDarkTheme: string;
-    nameFontSize: number;
-    nameLineHeight: number;
+  strokeColor: string;
+  strokeWidth: number;
+  strokeStyle: import("@excalidraw/element/types").StrokeStyle;
+  fillStyle: import("@excalidraw/element/types").FillStyle;
+  roughness: number;
+  roundness: {
+    type: import("@excalidraw/element/types").RoundnessType;
+    value?: number | undefined;
+  } | null;
+  backgroundColor: string;
+  radius: number;
+  nameOffsetY: number;
+  nameColorLightTheme: string;
+  nameColorDarkTheme: string;
+  nameFontSize: number;
+  nameLineHeight: number;
 };
 export declare const MIN_FONT_SIZE = 1;
 export declare const DEFAULT_FONT_SIZE = 20;
@@ -164,46 +168,60 @@ export declare const CANVAS_ONLY_ACTIONS: string[];
 export declare const DEFAULT_GRID_SIZE = 20;
 export declare const DEFAULT_GRID_STEP = 5;
 export declare const IMAGE_MIME_TYPES: {
-    readonly svg: "image/svg+xml";
-    readonly png: "image/png";
-    readonly jpg: "image/jpeg";
-    readonly gif: "image/gif";
-    readonly webp: "image/webp";
-    readonly bmp: "image/bmp";
-    readonly ico: "image/x-icon";
-    readonly avif: "image/avif";
-    readonly jfif: "image/jfif";
+  readonly svg: "image/svg+xml";
+  readonly png: "image/png";
+  readonly jpg: "image/jpeg";
+  readonly gif: "image/gif";
+  readonly webp: "image/webp";
+  readonly bmp: "image/bmp";
+  readonly ico: "image/x-icon";
+  readonly avif: "image/avif";
+  readonly jfif: "image/jfif";
 };
 export declare const MIME_TYPES: {
-    readonly svg: "image/svg+xml";
-    readonly png: "image/png";
-    readonly jpg: "image/jpeg";
-    readonly gif: "image/gif";
-    readonly webp: "image/webp";
-    readonly bmp: "image/bmp";
-    readonly ico: "image/x-icon";
-    readonly avif: "image/avif";
-    readonly jfif: "image/jfif";
-    readonly text: "text/plain";
-    readonly html: "text/html";
-    readonly json: "application/json";
-    readonly excalidraw: "application/vnd.excalidraw+json";
-    readonly excalidrawlib: "application/vnd.excalidrawlib+json";
-    readonly "excalidraw.svg": "image/svg+xml";
-    readonly "excalidraw.png": "image/png";
-    readonly binary: "application/octet-stream";
+  readonly svg: "image/svg+xml";
+  readonly png: "image/png";
+  readonly jpg: "image/jpeg";
+  readonly gif: "image/gif";
+  readonly webp: "image/webp";
+  readonly bmp: "image/bmp";
+  readonly ico: "image/x-icon";
+  readonly avif: "image/avif";
+  readonly jfif: "image/jfif";
+  readonly text: "text/plain";
+  readonly html: "text/html";
+  readonly json: "application/json";
+  readonly excalidraw: "application/vnd.excalidraw+json";
+  readonly excalidrawlib: "application/vnd.excalidrawlib+json";
+  readonly "excalidraw.svg": "image/svg+xml";
+  readonly "excalidraw.png": "image/png";
+  readonly binary: "application/octet-stream";
 };
-export declare const ALLOWED_PASTE_MIME_TYPES: readonly ["text/plain", "text/html", ...("image/svg+xml" | "image/png" | "image/jpeg" | "image/gif" | "image/webp" | "image/bmp" | "image/x-icon" | "image/avif" | "image/jfif")[]];
+export declare const ALLOWED_PASTE_MIME_TYPES: readonly [
+  "text/plain",
+  "text/html",
+  ...(
+    | "image/svg+xml"
+    | "image/png"
+    | "image/jpeg"
+    | "image/gif"
+    | "image/webp"
+    | "image/bmp"
+    | "image/x-icon"
+    | "image/avif"
+    | "image/jfif"
+  )[]
+];
 export declare const EXPORT_IMAGE_TYPES: {
-    readonly png: "png";
-    readonly svg: "svg";
-    readonly clipboard: "clipboard";
+  readonly png: "png";
+  readonly svg: "svg";
+  readonly clipboard: "clipboard";
 };
 export declare const EXPORT_DATA_TYPES: {
-    readonly excalidraw: "excalidraw";
-    readonly excalidrawClipboard: "excalidraw/clipboard";
-    readonly excalidrawLibrary: "excalidrawlib";
-    readonly excalidrawClipboardWithAPI: "excalidraw-api/clipboard";
+  readonly excalidraw: "excalidraw";
+  readonly excalidrawClipboard: "excalidraw/clipboard";
+  readonly excalidrawLibrary: "excalidrawlib";
+  readonly excalidrawClipboardWithAPI: "excalidraw-api/clipboard";
 };
 export declare const getExportSource: () => string;
 export declare const IMAGE_RENDER_TIMEOUT = 500;
@@ -220,10 +238,10 @@ export declare const IDLE_THRESHOLD = 60000;
 export declare const ACTIVE_THRESHOLD = 3000;
 export declare const THEME_FILTER = "invert(93%) hue-rotate(180deg)";
 export declare const URL_QUERY_KEYS: {
-    readonly addLibrary: "addLibrary";
+  readonly addLibrary: "addLibrary";
 };
 export declare const URL_HASH_KEYS: {
-    readonly addLibrary: "addLibrary";
+  readonly addLibrary: "addLibrary";
 };
 export declare const DEFAULT_UI_OPTIONS: AppProps["UIOptions"];
 export declare const MQ_MAX_WIDTH_PORTRAIT = 730;
@@ -236,82 +254,83 @@ export declare const DEFAULT_EXPORT_PADDING = 10;
 export declare const DEFAULT_MAX_IMAGE_WIDTH_OR_HEIGHT = 1440;
 export declare const MAX_ALLOWED_FILE_BYTES: number;
 export declare const SVG_NS = "http://www.w3.org/2000/svg";
-export declare const SVG_DOCUMENT_PREAMBLE = "<?xml version=\"1.0\" standalone=\"no\"?>\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n";
+export declare const SVG_DOCUMENT_PREAMBLE =
+  '<?xml version="1.0" standalone="no"?>\n<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n';
 export declare const ENCRYPTION_KEY_BITS = 128;
 export declare const VERSIONS: {
-    readonly excalidraw: 2;
-    readonly excalidrawLibrary: 2;
+  readonly excalidraw: 2;
+  readonly excalidrawLibrary: 2;
 };
 export declare const BOUND_TEXT_PADDING = 5;
 export declare const ARROW_LABEL_WIDTH_FRACTION = 0.7;
 export declare const ARROW_LABEL_FONT_SIZE_TO_MIN_WIDTH_RATIO = 11;
 export declare const VERTICAL_ALIGN: {
-    TOP: string;
-    MIDDLE: string;
-    BOTTOM: string;
+  TOP: string;
+  MIDDLE: string;
+  BOTTOM: string;
 };
 export declare const TEXT_ALIGN: {
-    LEFT: string;
-    CENTER: string;
-    RIGHT: string;
+  LEFT: string;
+  CENTER: string;
+  RIGHT: string;
 };
 export declare const ELEMENT_READY_TO_ERASE_OPACITY = 20;
 export declare const DEFAULT_PROPORTIONAL_RADIUS = 0.25;
 export declare const DEFAULT_ADAPTIVE_RADIUS = 32;
 export declare const ROUNDNESS: {
-    readonly LEGACY: 1;
-    readonly PROPORTIONAL_RADIUS: 2;
-    readonly ADAPTIVE_RADIUS: 3;
+  readonly LEGACY: 1;
+  readonly PROPORTIONAL_RADIUS: 2;
+  readonly ADAPTIVE_RADIUS: 3;
 };
 export declare const ROUGHNESS: {
-    readonly architect: 0;
-    readonly artist: 1;
-    readonly cartoonist: 2;
+  readonly architect: 0;
+  readonly artist: 1;
+  readonly cartoonist: 2;
 };
 export declare const STROKE_WIDTH: {
-    readonly thin: 1;
-    readonly bold: 2;
-    readonly extraBold: 4;
+  readonly thin: 1;
+  readonly bold: 2;
+  readonly extraBold: 4;
 };
 export declare const DEFAULT_ELEMENT_PROPS: {
-    strokeColor: ExcalidrawElement["strokeColor"];
-    backgroundColor: ExcalidrawElement["backgroundColor"];
-    fillStyle: ExcalidrawElement["fillStyle"];
-    strokeWidth: ExcalidrawElement["strokeWidth"];
-    strokeStyle: ExcalidrawElement["strokeStyle"];
-    roughness: ExcalidrawElement["roughness"];
-    opacity: ExcalidrawElement["opacity"];
-    locked: ExcalidrawElement["locked"];
+  strokeColor: ExcalidrawElement["strokeColor"];
+  backgroundColor: ExcalidrawElement["backgroundColor"];
+  fillStyle: ExcalidrawElement["fillStyle"];
+  strokeWidth: ExcalidrawElement["strokeWidth"];
+  strokeStyle: ExcalidrawElement["strokeStyle"];
+  roughness: ExcalidrawElement["roughness"];
+  opacity: ExcalidrawElement["opacity"];
+  locked: ExcalidrawElement["locked"];
 };
 export declare const LIBRARY_SIDEBAR_TAB = "library";
 export declare const CANVAS_SEARCH_TAB = "search";
 export declare const DEFAULT_SIDEBAR: {
-    readonly name: "default";
-    readonly defaultTab: "library";
+  readonly name: "default";
+  readonly defaultTab: "library";
 };
 export declare const LIBRARY_DISABLED_TYPES: Set<"embeddable" | "image" | "iframe">;
 export declare const TOOL_TYPE: {
-    readonly selection: "selection";
-    readonly lasso: "lasso";
-    readonly rectangle: "rectangle";
-    readonly diamond: "diamond";
-    readonly ellipse: "ellipse";
-    readonly arrow: "arrow";
-    readonly line: "line";
-    readonly freedraw: "freedraw";
-    readonly text: "text";
-    readonly image: "image";
-    readonly eraser: "eraser";
-    readonly hand: "hand";
-    readonly frame: "frame";
-    readonly magicframe: "magicframe";
-    readonly embeddable: "embeddable";
-    readonly laser: "laser";
+  readonly selection: "selection";
+  readonly lasso: "lasso";
+  readonly rectangle: "rectangle";
+  readonly diamond: "diamond";
+  readonly ellipse: "ellipse";
+  readonly arrow: "arrow";
+  readonly line: "line";
+  readonly freedraw: "freedraw";
+  readonly text: "text";
+  readonly image: "image";
+  readonly eraser: "eraser";
+  readonly hand: "hand";
+  readonly frame: "frame";
+  readonly magicframe: "magicframe";
+  readonly embeddable: "embeddable";
+  readonly laser: "laser";
 };
 export declare const EDITOR_LS_KEYS: {
-    readonly OAI_API_KEY: "excalidraw-oai-api-key";
-    readonly MERMAID_TO_EXCALIDRAW: "mermaid-to-excalidraw";
-    readonly PUBLISH_LIBRARY: "publish-library-data";
+  readonly OAI_API_KEY: "excalidraw-oai-api-key";
+  readonly MERMAID_TO_EXCALIDRAW: "mermaid-to-excalidraw";
+  readonly PUBLISH_LIBRARY: "publish-library-data";
 };
 /**
  * not translated as this is used only in public, stateless API as default value
@@ -319,21 +338,21 @@ export declare const EDITOR_LS_KEYS: {
  */
 export declare const DEFAULT_FILENAME = "Untitled";
 export declare const STATS_PANELS: {
-    readonly generalStats: 1;
-    readonly elementProperties: 2;
+  readonly generalStats: 1;
+  readonly elementProperties: 2;
 };
 export declare const MIN_WIDTH_OR_HEIGHT = 1;
 export declare const ARROW_TYPE: {
-    [T in AppState["currentItemArrowType"]]: T;
+  [T in AppState["currentItemArrowType"]]: T;
 };
 export declare const DEFAULT_REDUCED_GLOBAL_ALPHA = 0.3;
 export declare const ELEMENT_LINK_KEY = "element";
 /** used in tests */
 export declare const ORIG_ID: unique symbol;
 export declare enum UserIdleState {
-    ACTIVE = "active",
-    AWAY = "away",
-    IDLE = "idle"
+  ACTIVE = "active",
+  AWAY = "away",
+  IDLE = "idle",
 }
 /**
  * distance at which we merge points instead of adding a new merge-point

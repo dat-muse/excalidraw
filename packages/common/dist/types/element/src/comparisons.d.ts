@@ -1,4 +1,4 @@
-import type { ElementOrToolType } from "@excalidraw/excalidraw/types";
+import type { ElementOrToolType } from "excalidraw-custom/types";
 export declare const hasBackground: (type: ElementOrToolType) => boolean;
 export declare const hasStrokeColor: (type: ElementOrToolType) => boolean;
 export declare const hasStrokeWidth: (type: ElementOrToolType) => boolean;

@@ -1,3 +1,6 @@
-import type { UIAppState } from "@excalidraw/excalidraw/types";
+import type { UIAppState } from "excalidraw-custom/types";
 import type { NonDeletedExcalidrawElement } from "./types";
-export declare const showSelectedShapeActions: (appState: UIAppState, elements: readonly NonDeletedExcalidrawElement[]) => boolean;
+export declare const showSelectedShapeActions: (
+  appState: UIAppState,
+  elements: readonly NonDeletedExcalidrawElement[]
+) => boolean;
